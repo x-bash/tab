@@ -55,9 +55,9 @@ BEGIN {
 function foreachrow(        i, j, start, end, sep ){
     h = 0
     for (i=1; i<=coll; ++i) {
-        start = col[ i "S" ]
-        end = col[ i "E" ]
-        sep = col[ i "P" ]
+        start   = col[ i "S" ]
+        end     = col[ i "E" ]
+        sep     = col[ i "P" ]
         if (end < 0 ) end = NF + end + 1
 
         for (j=start; j<end && j<=NF; j+=sep) {
