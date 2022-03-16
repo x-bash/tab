@@ -22,7 +22,7 @@ function handle( astr, obj, idx,    arr, arrl ){
 }
 
 BEGIN{
-    if (ROW == "") {
+    if ( ROW ~ "^-?$" ) {
         rowl = 1
         row[ rowl "S" ] = 1
         row[ rowl "E" ] = MAX_INT
@@ -37,7 +37,7 @@ BEGIN{
 }
 
 BEGIN {
-    if (COL == "") {
+    if ( COL ~ "^-?$" ) {
         coll = 1
         col[ coll "S" ] = 1
         col[ coll "E" ] = MAX_INT
