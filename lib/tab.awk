@@ -11,13 +11,13 @@ function handle( astr, obj, idx,    arr, arrl ){
     # print "astr: " idx "\t" astr "\t" arr[1] "\t" arr[2] "\t" arr[3]
 
     if (arrl == 1) {
-        obj[idx "S"] = arr[1]
-        obj[idx "E"] = arr[1] + 1
-        obj[idx "P"] = 1
+        obj[ idx "S" ] = arr[1]
+        obj[ idx "E" ] = arr[1] + 1
+        obj[ idx "P" ] = 1
     } else {
-        obj[idx "S"] = arr[1]
-        obj[idx "E"] = (arr[2] == "") ? MAX_INT : arr[2]
-        obj[idx "P"] = (arr[3] == "") ? 1 : arr[3]
+        obj[ idx "S" ] = arr[1]
+        obj[ idx "E" ] = (arr[2] == "") ? MAX_INT : arr[2]
+        obj[ idx "P" ] = (arr[3] == "") ? 1 : arr[3]
     }
 }
 
